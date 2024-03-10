@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*::before,
+*::after,
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  background-color: #F2EAE2;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p{
+  color: #6C7289;
+
+  line-height: 1.64;
+}
+
+h1, h2, h3
+{
+  line-height: 1;
+
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.card-container
+{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+.grid
+{
+  /* width: calc(100% - 34px);
+  margin: 0 auto; */
+}
+
+.card
+{
+  background-color: #FFFFFF;
+  border-radius: 8px;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card__img
+{
+  object-fit: fill;
+  width: 100%;
+}
+
+.card__img img
+{
+  width: 100%;
+}
+
+.card__title
+{
+  margin-bottom: 0.75em;
+}
+
+.card__content
+{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.title
+{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.card__heading
+{
+  margin-bottom: 1em;
+}
+
+.heading
+{
+  color: #1C232B;
+}
+
+.card__text
+{
+  margin-bottom: 1.5em;
+}
+
+.card__price
+{
+    display: flex;
+    column-gap: 1.1875em;
+    width: max-content;
+    margin-bottom: 1.25em;
+}
+
+.price_old
+{
+  position: relative;
+}
+
+.price-stroke
+{
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50);
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #6C7289;
+}
+
+.card__cta button
+{
+  width: 100%;
+
+  border: 0;
+
+  font-size: 0.875rem;
+  text-transform: uppercase;
+
+  padding: 0.9375em 0;
+
+  background-color: #3D8168;
+
+  color: #FFFFFF;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.725em;
+
+  border-radius: 8px;
+
+}
+
+.color--green
+{
+  color: #3D8168;
+}
+
+@media (min-width: 590px) {
+  .card-container
+  {
+    background-color: #6C7289;
+  }
+
+  .card
+  {
+    display: flex;
+    width: 37.5em;
+  }
+
+  .card__content
+  {
+    padding-left: 2.1875em;
+    padding-right: 2.1875em;
+
+    padding-top: 2em;
+    padding-bottom:2em;
+  }
+
+  .card__img img
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* image-ren; */
+
+  .card_title
+  {
+    margin-bottom: 1.25em;
+  }
+
+  .card__heading
+  {
+    margin-bottom: 1.5em;
+  }
+
+  .card__text
+  {
+    margin-bottom: 1.8125em;
+  }
+
+  .card__price{
+    margin-bottom: 1.875em;
+  }
+
+}
